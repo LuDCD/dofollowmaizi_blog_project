@@ -1,0 +1,115 @@
+2016-10-03 18:10:29,803 [Thread-2:7980] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Django_Projects\blog_project\blog\views.py", line 35, in index
+    return render(request, 'index.html', locals())
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "E:\Python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2016-10-03 18:10:51,941 [Thread-2:2052] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Django_Projects\blog_project\blog\views.py", line 35, in index
+    return render(request, 'index.html', locals())
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "E:\Python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2016-10-03 18:13:44,253 [Thread-2:7636] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Django_Projects\blog_project\blog\views.py", line 35, in index
+    return render(request, 'index.html', locals())
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "E:\Python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2016-10-03 18:13:46,832 [Thread-3:6176] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Django_Projects\blog_project\blog\views.py", line 35, in index
+    return render(request, 'index.html', locals())
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "E:\Python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2016-10-03 18:15:19,944 [Thread-2:6588] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Django_Projects\blog_project\blog\views.py", line 35, in index
+    return render(request, 'index.html', locals())
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "E:\Python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2016-10-03 18:19:30,301 [Thread-2:7544] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Django_Projects\blog_project\blog\views.py", line 35, in index
+    return render(request, 'index.html', locals())
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "E:\Python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\template\context.py", line 235, in bind_template
+    updates.update(processor(self.request))
+TypeError: global_setting() takes no arguments (1 given)
+2016-10-03 18:24:19,772 [Thread-13:4276] [django.request:170] [base:get_response] [WARNING]- Not Found: /portal.php
