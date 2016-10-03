@@ -19,6 +19,10 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# 自定义用户models
+# 对应的是models.py里面的User
+AUTH_USER_MODEL = 'blog.User'
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -84,8 +88,13 @@ WSGI_APPLICATION = 'blog_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'blogdb',   # blogdb数据库要自己手动创建
+        'USER': 'root',     # 测试和开发可以用root，生产环境千万别用
+        'PASSWORD': '123456',
+        'HOST': '',         # 默认是127.0.0.1
+        'POST': '3306',     # 默认是3306
+
     }
 }
 
