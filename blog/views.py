@@ -27,7 +27,8 @@ def global_setting(request):
 def index(request):
     # 使用日志器
     try:
-        file = open('sss.txt', 'r') # 例子
+        # file = open('sss.txt', 'r') # 例子
+        pass
     except Exception as e:
         logger.error(e)     # 出现异常调用日志器，写入日志
 

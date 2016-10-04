@@ -5,7 +5,7 @@ from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 
-# 用户模型.
+# 1 用户模型.
 # 采用继承方式扩展用户信息(可以继承django的分组、权限)<本程序采用>
 # 也可以采用另外一种方式：关联的方式去扩展用户信息
 class User(AbstractUser):   # 继承AbstractUser抽象类。这里重写了User要在settings.py中声明
@@ -22,7 +22,7 @@ class User(AbstractUser):   # 继承AbstractUser抽象类。这里重写了User�
     def __unicode__(self):
         return self.username
 
-# tag(标签)
+# 2 tag(标签)
 class Tag(models.Model):
     name = models.CharField(max_length=30, verbose_name='标签名称')
 
@@ -33,7 +33,7 @@ class Tag(models.Model):
     def __unicode__(self):
         return self.name    # 返回必须是字符串类型。如果返回id,则必须是 str(self.id)
 
-# 分类
+# 3 分类
 class Category(models.Model):
     name = models.CharField(max_length=30, verbose_name='分类名称')
     index = models.IntegerField(default=999, verbose_name='分类的排序')
@@ -46,7 +46,7 @@ class Category(models.Model):
         return self.name    # 返回必须是字符串类型。如果返回id,则必须是 str(self.id)
 
 
-# 文章模型
+# 4 文章模型
 class Article(models.Model):
     title = models.CharField(max_length=50, verbose_name='文章标题')
     desc = models.CharField(max_length=50, verbose_name='文章描述')
@@ -67,7 +67,7 @@ class Article(models.Model):
     def __unicode__(self):
         return self.title
 
-# 评论模型
+# 5 评论模型
 class Comment(models.Model):
     content = models.TextField(verbose_name='评论内容')
     date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
@@ -83,7 +83,7 @@ class Comment(models.Model):
     def __unicode__(self):
         return str(self.id)
 
-# 友情链接
+# 6 友情链接
 class Links(models.Model):
     title = models.CharField(max_length=50, verbose_name='标题')
     description = models.CharField(max_length=200, verbose_name='友情链接描述')
@@ -99,7 +99,7 @@ class Links(models.Model):
     def __unicode__(self):
         return self.title
 
-# 广告
+# 7 广告
 class Ad(models.Model):
     title = models.CharField(max_length=50, verbose_name='广告标题')
     description = models.CharField(max_length=200,  verbose_name='广告描述')

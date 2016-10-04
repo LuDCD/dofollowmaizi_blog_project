@@ -19,10 +19,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# 自定义用户models
-# 对应的是models.py里面的User
-AUTH_USER_MODEL = 'blog.User'
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -121,6 +117,15 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+# 配置上传文件路径
+MEDIA_URL = '/uploads/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+
+# 自定义用户models# 对应的是models.py里面的User
+AUTH_USER_MODEL = 'blog.User'
+
 
 # 网站的基本信息配置
 SITE_NAME = '戈天的个人博客'

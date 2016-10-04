@@ -113,3 +113,278 @@ Traceback (most recent call last):
     updates.update(processor(self.request))
 TypeError: global_setting() takes no arguments (1 given)
 2016-10-03 18:24:19,772 [Thread-13:4276] [django.request:170] [base:get_response] [WARNING]- Not Found: /portal.php
+2016-10-04 01:44:31,605 [Thread-8:5820] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-10-04 10:59:14,213 [Thread-2:5188] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (date_publish) specified for Article. Check fields/fieldsets/exclude attributes of class ArcticleAdmin.
+2016-10-04 10:59:41,756 [Thread-8:6468] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (date_publish) specified for Article. Check fields/fieldsets/exclude attributes of class ArcticleAdmin.
+2016-10-04 10:59:46,043 [Thread-9:5252] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (date_publish) specified for Article. Check fields/fieldsets/exclude attributes of class ArcticleAdmin.
+2016-10-04 11:00:40,755 [Thread-2:6568] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (date_publish) specified for Article. Check fields/fieldsets/exclude attributes of class ArcticleAdmin.
+2016-10-04 11:02:47,086 [Thread-11:6004] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (date_publish) specified for Article. Check fields/fieldsets/exclude attributes of class ArcticleAdmin.
+2016-10-04 12:20:28,903 [Thread-8:3404] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-10-04 12:20:28,947 [Thread-9:5352] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-10-04 12:21:17,063 [Thread-46:3472] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/updoad/kindeditor
+2016-10-04 12:23:02,253 [Thread-47:5816] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/updoad/kindeditor
+2016-10-04 12:23:21,565 [Thread-31:5372] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/48850ad1-89ea-11e6-9bcf-40167e41122e.jpg/
+2016-10-04 12:23:39,164 [Thread-34:4604] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/52f9e440-89ea-11e6-8e3e-40167e41122e.jpg/
+2016-10-04 12:23:42,410 [Thread-41:916] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/48850ad1-89ea-11e6-9bcf-40167e41122e.jpg/
+2016-10-04 12:23:42,460 [Thread-40:4908] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/52f9e440-89ea-11e6-8e3e-40167e41122e.jpg/
+2016-10-04 12:23:44,918 [Thread-43:6672] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/52f9e440-89ea-11e6-8e3e-40167e41122e.jpg/
+2016-10-04 12:23:44,933 [Thread-44:3808] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/48850ad1-89ea-11e6-9bcf-40167e41122e.jpg/
+2016-10-04 12:24:19,483 [Thread-46:4028] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-10-04 12:25:22,746 [Thread-52:3432] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-10-04 12:25:43,983 [Thread-61:544] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/9d304e00-89ea-11e6-b494-40167e41122e.jpg/
+2016-10-04 12:26:04,414 [Thread-65:6592] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/a94cbcf0-89ea-11e6-978f-40167e41122e.jpg/
+2016-10-04 12:26:24,891 [Thread-72:3004] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/a94cbcf0-89ea-11e6-978f-40167e41122e.jpg/
+2016-10-04 12:26:32,744 [Thread-74:4604] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1467, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1078, in save_model
+    obj.save()
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\base.py", line 710, in save
+    force_update=force_update, update_fields=update_fields)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\base.py", line 738, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\base.py", line 822, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\base.py", line 861, in _do_insert
+    using=using, raw=raw)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\sql\compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\backends\mysql\base.py", line 129, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1048, "Column 'user_id' cannot be null")
+2016-10-04 12:26:45,647 [Thread-77:4208] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/a94cbcf0-89ea-11e6-978f-40167e41122e.jpg/
+2016-10-04 12:26:47,117 [Thread-79:5368] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/a94cbcf0-89ea-11e6-978f-40167e41122e.jpg/
+2016-10-04 12:27:18,697 [Thread-92:7724] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/d59bf81e-89ea-11e6-9c34-40167e41122e.jpg/
+2016-10-04 12:27:32,167 [Thread-94:2992] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/blog/article/add/
+Traceback (most recent call last):
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1467, in changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\contrib\admin\options.py", line 1078, in save_model
+    obj.save()
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\base.py", line 710, in save
+    force_update=force_update, update_fields=update_fields)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\base.py", line 738, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\base.py", line 822, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\base.py", line 861, in _do_insert
+    using=using, raw=raw)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\models\sql\compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\backends\mysql\base.py", line 129, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\MySQLdb\cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "D:\zhouheng\Programming\blog_django_py27_venv\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1048, "Column 'user_id' cannot be null")
+2016-10-04 12:27:43,474 [Thread-96:4344] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/d59bf81e-89ea-11e6-9c34-40167e41122e.jpg/
+2016-10-04 12:29:34,296 [Thread-23:6564] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/2678800f-89eb-11e6-a1f1-40167e41122e.jpg/
+2016-10-04 12:32:09,316 [Thread-41:6656] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/2678800f-89eb-11e6-a1f1-40167e41122e.jpg/
+2016-10-04 12:32:25,164 [Thread-43:1688] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/2678800f-89eb-11e6-a1f1-40167e41122e.jpg/
+2016-10-04 12:46:50,552 [Thread-25:4668] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/uploads/kindeditor
+2016-10-04 12:47:14,976 [Thread-27:4948] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/uploads/kindeditor
+2016-10-04 12:47:35,410 [Thread-34:7776] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/ab10facf-89ed-11e6-a0c5-40167e41122e.jpg/
+2016-10-04 12:54:09,213 [Thread-5:7664] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/blog/article/add/kindeditor/2016/10/ab10facf-89ed-11e6-a0c5-40167e41122e.jpg/
+2016-10-04 12:54:29,397 [Thread-15:4068] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2016/10/a1e91e51-89ee-11e6-acfd-40167e41122e.jpg
+2016-10-04 13:02:34,730 [Thread-67:4268] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2016/10/a1e91e51-89ee-11e6-acfd-40167e41122e.jpg
+2016-10-04 13:02:53,641 [Thread-77:8112] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2016/10/ce7964b0-89ef-11e6-bf90-40167e41122e.jpg
+2016-10-04 13:03:32,990 [Thread-4:7400] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2016/10/ce7964b0-89ef-11e6-bf90-40167e41122e.jpg
+2016-10-04 13:03:47,385 [Thread-14:1228] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2016/10/ce7964b0-89ef-11e6-bf90-40167e41122e.jpg
+2016-10-04 13:04:04,469 [Thread-25:7868] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2016/10/f8ae7270-89ef-11e6-b85f-40167e41122e.jpg
+2016-10-04 13:14:25,417 [Thread-5:7008] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/kindeditor/2016/10/f8ae7270-89ef-11e6-b85f-40167e41122e.jpg
